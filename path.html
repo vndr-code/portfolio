@@ -40,9 +40,44 @@
 								<span class="image fit" style="flex: 1;"><img src="images/obj1.png" alt="Path 2" /></span>
 								<span class="image fit" style="flex: 1;"><img src="images/obj2.png" alt="Path 3" /></span>
 							</div>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+							<h2>3D Printing Simulation: Path Generation and Mesh Export/Visualization</h2>
+
+								<p>This Python-based toolset simulates <strong>3D path generation</strong> and <strong>mesh construction</strong> for 3D printed structures, such as concrete printing. It allows users to create complex paths, extrude 2D profiles along these paths using <strong>Rotation Minimizing Frames (RMF)</strong>, and visualize the results as static renders or animated GIFs. The tool also supports mesh export for further analysis and real-world applications.</p>
+								
+								<h3>Core Features:</h3>
+								
+								<ul>
+								  <li><strong>Path Generation:</strong>  
+								  Generate diverse 3D paths suitable for additive manufacturing:
+								    <ul>
+								      <li><strong>Cylindrical Path:</strong> Sequential circular layers forming a vertical cylinder.</li>
+								      <li><strong>Hollow Cube:</strong> Square perimeter paths stacked to create a hollow cubic structure.</li>
+								      <li><strong>Convex/Concave Curves:</strong> Paths with smooth outward or inward curvature.</li>
+								      <li><strong>Straight Wall with Smooth Arc Transitions:</strong> A zig-zagging wall with gentle curved transitions between layers.</li>
+								    </ul>
+								  </li>
+								
+								  <li><strong>Profile Generation:</strong>  
+								  Create 2D profiles (e.g., rectangles, circles, ellipses) that can be extruded along the generated paths to build complex 3D geometries.</li>
+								
+								  <li><strong>Rotation Minimizing Frames (RMF):</strong>  
+								  Calculate RMFs along 3D paths to ensure smooth, twist-free extrusion of profiles, resulting in clean and accurate mesh generation.</li>
+								
+								  <li><strong>Mesh Editing & Export:</strong>  
+								    <ul>
+								      <li><strong>OBJ Export:</strong> Save the generated 3D mesh in <code>.obj</code> format for further processing or integration into other tools.</li>
+								      <li><strong>Mesh Refinement:</strong> Apply techniques like <em>Laplacian smoothing</em> and <em>vertex welding</em> to enhance mesh quality.</li>
+								    </ul>
+								  </li>
+								
+								  <li><strong>Visualization:</strong>  
+								    <ul>
+								      <li>Render static plots of the generated paths and extruded meshes.</li>
+								      <li>Create <strong>animated GIFs</strong> showing the progressive layer-by-layer construction of the 3D printed object.</li>
+								    </ul>
+								  </li>
+								</ul>
+
 					</section>
 
 			</div>
