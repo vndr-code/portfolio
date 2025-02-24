@@ -41,8 +41,37 @@
 								<span class="image fit" style="flex: 1;"><img src="images/pbd_simulation3.gif" alt="PBD Simulation 3" /></span>
 							</div>
 							<!-- <span class="image fit"><img src="images/pbd_simulation.gif" alt="PBD Simulation" /></span> -->
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<h2>PBD Simulation for 3D Printed Structures</h2>
+
+								<p>This project explores the use of <strong>Position-Based Dynamics (PBD)</strong> to simulate the structural behavior and collapse patterns of 3D printed architectures, particularly focusing on concrete-like materials. The goal is to capture critical physical phenomena such as <strong>layer stiffening</strong> due to curing and the <strong>detection of potential structural collapse</strong>.</p>
+								
+								<h3>Core Features:</h3>
+								
+								<ul>
+								  <li><strong>Particle Representation:</strong>  
+								  The 3D printed structure is modeled as a network of particles. Each particle represents a point along a pre-generated path (imported from a CSV) and holds properties like position, velocity, mass, radius, and an <em>age attribute</em> that simulates the curing process.</li>
+								
+								  <li><strong>Layer & Age Assignment:</strong>  
+								  Particles are grouped into layers based on their z-coordinate. An <em>artificial age</em> is assigned to each particle relative to its layer, mimicking real-world curing where older layers stiffen over time. This age influences material stiffness and plasticity.</li>
+								
+								  <li><strong>Spring Constraints:</strong>  
+								  To simulate structural integrity:
+								    <ul>
+								      <li><strong>Primary Springs</strong> connect consecutive particles along the printing path, maintaining the basic shape.</li>
+								      <li><strong>Secondary Springs</strong> link nearby particles (within a defined radius) to add lateral support. The stiffness and plasticity of these springs are <em>age-dependent</em>, allowing the simulation to capture curing effects.</li>
+								    </ul>
+								  </li>
+								
+								  <li><strong>Dynamics & Constraint Projection:</strong>  
+								  The simulation employs <em>Euler integration</em> with gravity, updating particle positions while enforcing boundary conditions. Multiple passes of constraint projection ensure the springs maintain appropriate lengths. <strong>Collision handling</strong> prevents particle overlap.</li>
+								
+								  <li><strong>Collapse Detection:</strong>  
+								  The system monitors total kinetic energy as an indicator of structural stability. A sudden spike in energy beyond a configurable threshold triggers a <strong>collapse event</strong>, freezing the simulation and highlighting failure points.</li>
+								
+								  <li><strong>Output & Visualization:</strong>  
+								  The simulation outputs the evolving particle positions over time, generating <strong>animated GIFs</strong> that visually demonstrate the structure’s deformation and collapse.</li>
+								</ul>
+
 						</div>
 					</section>
 
