@@ -42,14 +42,27 @@
 
 							  <!-- Text Section -->
 							  <div style="flex: 2;">
-							    <h2>PBD Simulation for 3D Printed Structures</h2>
+							    <h2>Particle-Based Viscoelastic Fluid Simulation in Julia</h2>
 							    <p>
-							      This project implements a <strong>Position-Based Dynamics (PBD)</strong> simulation tailored for 3D printed structures. The simulation models the behavior of a structure (e.g., a printed concrete object) using particles, spring constraints, and collision handling. The goal is to capture key physical phenomena such as layer stiffening (via age-dependent parameters) and collapse detection.
+							      This project implements a <strong>particle-based viscoelastic fluid simulation</strong> in Julia, inspired by the work of Clavet, Beaudoin, and Poulin (2005). The simulation models the complex dynamics of viscoelastic fluids by treating the fluid as a collection of interacting particles, capturing both fluid-like and elastic behaviors.
 							    </p>
 							    <p>
-							      The simulation updates particle positions over time, enforces boundary conditions, and visualizes collapse patterns when structural instability occurs. Animated GIFs, like the one shown here, demonstrate these behaviors.
+							      Key techniques used in the simulation include:
+							      <ul>
+							        <li><strong>Double Density Relaxation:</strong> Enforces incompressibility by calculating local densities and applying corrective displacements.</li>
+							        <li><strong>Spring-Based Elasticity:</strong> Connects particles with springs to simulate elastic responses within the fluid.</li>
+							        <li><strong>Spatial Hashing:</strong> Implements an efficient neighbor search to ensure scalability and performance.</li>
+							        <li><strong>Boundary Handling:</strong> Enforces fixed boundary collisions with a sticky response to maintain fluid integrity within the simulation domain.</li>
+							      </ul>
+							    </p>
+							    <p>
+							      This approach allows for the realistic simulation of viscoelastic behaviors, balancing fluid flow with elastic deformation. The animated GIF demonstrates these dynamics in action.
+							    </p>
+							    <p>
+							      <em>Inspired by:</em> Clavet, S., Beaudoin, P., & Poulin, P. (2005). <strong>Particle-based viscoelastic fluid simulation.</strong> In Proceedings of the ACM SIGGRAPH/Eurographics Symposium on Computer Animation (pp. 219–228). DOI: <a href="https://doi.org/10.1145/1073368.1073400" target="_blank">10.1145/1073368.1073400</a>.
 							    </p>
 							  </div>
+							</div>
 							</div>
 						</div>
 					</section>
