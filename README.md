@@ -1,7 +1,7 @@
 # Portfolio Website
 
 This is my personal portfolio showcasing projects in **computational modeling, digital fabrication, and simulation**.  
-You can view the live version here: **[My Portfolio](https://github.io/portfolio/index.html)**
+You can view the live version here: **[My Portfolio](https://vndr-code.github.io/portfolio/)**
 
 ## Modifications:
 - Customized the template to include detailed project descriptions.
