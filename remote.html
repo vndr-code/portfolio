@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Electronics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="PBD_info.html" class="active">PBD</a></li>
+						<li><a href="path.html" class="active">Path</a></li>
+						<li><a href="viscoelastic.html" class="active">Viscoelastic</a></li>
+						<li><a href="silicone.html" class="active">Silicon</a></li>
+						<li><a href="linkages.html" class="active">Gears</a></li>
+						<li><a href="tensegrity.html" class="active">Tensegrity</a></li>
+						<li><a href="remote.html" class="active">Electronics</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Tensegrity Structures – Physical and Simulated</h1>
+							
+							<!-- Flex container for multiple GIFs -->
+							<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+							  <span class="image fit" style="flex: 1;">
+							    <img src="images/electric1.gif" alt="el 1" style="height: 350px; object-fit: contain; width: 100%;" />
+							  </span>
+							  <span class="image fit" style="flex: 1;">
+							    <img src="images/electric2.gif" alt="el2" style="height: 350px; object-fit: contain; width: 100%;" />
+							  </span>
+							</div>
+
+							<div style="flex: 2;">
+							
+							    <h2>Custom Remote Control Systems – Signal Processing and Robotics</h2>
+							    <p>
+								This project showcases a fully custom-built remote control system designed for wireless actuation of robotic components. The entire system, from PCB design to microcontroller programming, was developed from the ground up to ensure precise, interference-free signal transmission and execution.
+							    </p>
+
+							    <h3>1. Remote Control Transmitter</h3>
+							    <p>
+								The remote control serves as the primary signal transmitter, encoding and wirelessly sending commands to the receiving end.
+							    </p>
+							    <ul>
+								<li><strong>PCB & Circuit Design:</strong>
+								    <ul>
+									<li>Designed and fabricated a custom PCB housing microcontrollers, signal modulation circuits, and power regulation components.</li>
+									<li>Integrated multiple push buttons, each mapped to distinct control signals.</li>
+								    </ul>
+								</li>
+								<li><strong>Microcontroller Programming & Signal Transmission:</strong>
+								    <ul>
+									<li>Programmed the microcontroller using Microchip Technology to encode signals.</li>
+									<li>Implemented reliable signal transmission ensuring distinct commands are sent without interference.</li>
+									<li>Verified signal integrity using LED indicators for different button presses.</li>
+								    </ul>
+								</li>
+								<li><strong>Electrical Noise Reduction:</strong>
+								    <ul>
+									<li>Incorporated capacitors and buffering techniques to stabilize the signal and mitigate electrical noise.</li>
+									<li>Ensured clean power delivery to prevent false triggering or interference with other electronics.</li>
+								    </ul>
+								</li>
+							    </ul>
+
+							    <h3>2. Wheelbarrow Robot – Receiver & Actuation</h3>
+							    <p>
+								The receiving end of the system consists of a robot that decodes and executes movement commands based on the transmitted signals.
+							    </p>
+							    <ul>
+								<li><strong>Receiver PCB & Microcontroller Integration:</strong>
+								    <ul>
+									<li>Designed a dedicated PCB featuring a microcontroller and signal decoding circuitry.</li>
+									<li>Implemented electrical isolation techniques to ensure stable reception of transmitted signals.</li>
+								    </ul>
+								</li>
+								<li><strong>Servo Motor Control & Movement Execution:</strong>
+								    <ul>
+									<li>Used servo motors for movement, setting precise angles based on received signals.</li>
+									<li>Determined the appropriate signal pulse values to achieve accurate motor positioning.</li>
+									<li>Configured microcontroller logic to smoothly transition between servo positions, ensuring controlled motion.</li>
+								    </ul>
+								</li>
+								<li><strong>Real-Time Signal Decoding & Execution:</strong>
+								    <ul>
+									<li>The microcontroller continuously monitors incoming signals, mapping them to pre-set motor actions.</li>
+									<li>Verified consistent response across different environments, ensuring robust performance.</li>
+								    </ul>
+								</li>
+							    </ul>
+
+							    <h3>Future Enhancements & Applications</h3>
+							    <ul>
+								<li>Expanding to multi-channel communication for simultaneous control of multiple devices.</li>
+								<li>Implementing alternative transmission methods (e.g., Bluetooth or RF-based signal encoding) for greater range and reliability.</li>
+								<li>Incorporating feedback loops for improved control precision and adaptive motion adjustments.</li>
+							    </ul>
+							</div>
+
+								
+								
+								<!-- Vertical GIF -->
+							  <div style="flex: 1; text-align: center;">
+							    <span class="image fit">
+							      <img src="images/tensegrity1.gif" alt="Vertical tensegrity" style="max-width: 100%; height: auto;" />
+							    </span>
+							  </div>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
