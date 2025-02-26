@@ -1,3 +1,16 @@
+# Portfolio Website
+
+This is my personal portfolio showcasing projects in **computational modeling, digital fabrication, and simulation**.  
+You can view the live version here: **[My Portfolio](https://vndr-code.github.io/portfolio/index.html)**
+
+## Modifications:
+- Customized the template to include detailed project descriptions.
+- Added interactive visualizations, GIFs, and structured content.
+- Integrated a clear navigation system for better user experience.
+
+---
+
+
 Hyperspace by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
