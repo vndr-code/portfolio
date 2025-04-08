@@ -65,18 +65,19 @@
 								  <li>How can iterative refinements be applied to ensure uniform cell distribution and fill void regions?</li>
 								</ul>
 								<p>
-								  <strong>Approach:</strong>
-								  The simulation follows a step-by-step process:
-								  <em>
-								    - Defining a cylindrical domain, then packing it efficiently with nucleation sites using KD-tree based spatial queries.
-								    - Tagging particles according to their position relative to the cylinder’s surface and along its axial direction.
-								    - Constructing polyhedra via convex hulls around particle groups to define individual crystal cells.
-								    - Analyzing gaps and overlaps through volumetric sampling and using K-means clustering to guide additional cell placement.
-								  </em>
+								  <strong>Approach:</strong> The simulation follows a step-by-step process:
 								</p>
+								<ul>
+								  <li><em>Defining a cylindrical domain, then packing it efficiently with nucleation sites using KD-tree based spatial queries.</em></li>
+								  <li><em>Tagging particles according to their position relative to the cylinder’s surface and along its axial direction.</em></li>
+								  <li><em>Constructing polyhedra via convex hulls around particle groups to define individual crystal cells.</em></li>
+								  <li><em>Analyzing gaps and overlaps through volumetric sampling and using K-means clustering to guide additional cell placement.</em></li>
+								</ul>
 								<p>
 								  <strong>Visualizations:</strong>
-								  Animated GIFs illustrate the sequential formation and rotation of the crystal lattice, while a density heat map reveals local crystal concentration. Detailed images also show areas of overlap and empty regions, offering insights into cell distribution and potential refinements.
+								  Animated GIFs illustrate individual crystal positions of the crystal lattice, while a density heat map reveals local 
+									crystal concentration. Detailed images also show areas of overlap and empty regions, offering insights into cell 
+									distribution and potential refinements.
 								</p>
 								<p>
 								  <strong>Technologies & Techniques:</strong>
