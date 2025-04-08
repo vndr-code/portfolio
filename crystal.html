@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Crystal</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="PBD_info.html" class="active">PBD</a></li>
+						<li><a href="path.html" class="active">Path</a></li>
+						<li><a href="viscoelastic.html" class="active">Viscoelastic</a></li>
+						<li><a href="silicon.html" class="active">Silicone</a></li>
+						<li><a href="linkages.html" class="active">Gears</a></li>
+						<li><a href="tensegrity.html" class="active">Tensegrity</a></li>
+						<li><a href="remote.html" class="active">Electronics</a></li>
+						<li><a href="patterns.html" class="active">Patterns</a></li>
+						<li><a href="mesh.html" class="active">Mesh</a></li>
+						<li><a href="crystal.html" class="active">Crystal</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1>CrystalCell Simulation</h1>
+							  <h2>Flexible Framework for Metal Crystal Formation in 3D Printing</h2>
+							  <div class="project-media" style="display: flex; gap: 10px; flex-wrap: wrap;">
+							    <span class="image fit" style="flex: 1;"><img src="images/crystalcell_animation.gif" alt="CrystalCell Simulation Animation"></span>
+							    <span class="image fit" style="flex: 1;"><img src="images/crystalcell_heatmap.png" alt="Density Heatmap"></span>
+							  </div>
+							  <p>
+							    <strong>CrystalCell Simulation</strong> is a computational framework designed to simulate the formation 
+							    and evolution of metal crystals during 3D printing. The system was originally developed to study 
+							    metal crystal growth, but its flexible design allows it to be adapted for a variety of crystal systems 
+							    (e.g. perovskites, semiconductors, and ceramic composites).
+							  </p>
+							  <p>
+							    The project addresses key research questions such as:
+							  </p>
+							  <ul>
+							    <li>How do process parameters—such as heat, chemical environment, and mechanical stress—affect crystal nucleation and growth?</li>
+							    <li>How can gaps and overlaps in the crystallized structure be detected and quantified?</li>
+							    <li>What methods can be used to iteratively fill voids in the crystalline network, ensuring high structural integrity?</li>
+							  </ul>
+							  <p>
+							    <strong>Approach:</strong>  
+							    The simulation combines techniques from computational geometry and particle-based dynamics:
+							    <em>
+							      - A cylinder is defined as the domain, and particles (representing nucleation sites) are packed into it using efficient spatial queries (KD-trees).  
+							      - The particles are tagged based on their position relative to the cylinder’s surface and along its axial direction, 
+								mimicking how actual metal crystals form under controlled conditions.  
+							      - Convex hulls are computed to define individual crystal cells, while advanced sampling and clustering techniques
+								analyze gaps and overlap between cells.
+							    </em>
+							  </p>
+							  <p>
+							    Visualizations include animated GIFs showing crystal growth and sequential appearance, a density heat map that 
+							    reveals local crystal concentration, and overlap analysis that informs the simulation’s refinement process.
+							  </p>
+							  <p>
+							    This framework not only provides insight into metal crystal formation during 3D printing but also serves as a versatile tool 
+							    for exploring the influence of different processing conditions on microstructural evolution in diverse material systems.
+							  </p>
+							  <p>
+							    <strong>Technologies & Techniques:</strong>  
+							    The project leverages particle-based dynamics, KD-tree spatial querying, convex hull construction, and clustering 
+							    (via K-means) to build and analyze the crystalline structure. While it incorporates aspects of unsupervised 
+							    learning (K-means clustering), its primary focus is on simulation and computational geometry.
+							  </p>
+							</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+					    <li>&copy; vndr-code. All rights reserved.</li>
+					    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
